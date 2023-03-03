@@ -1,0 +1,13 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+:root{
+   --todo-list:#0B2027;
+   --borda:rgba(246, 241, 209, 0.5);
+   --texto:#F6F1D1;
+   --space-mono:font-family: "Space Mono", monospace;
+   --bioRhyme:font-family: "BioRhyme", serif;
+}
+
+
