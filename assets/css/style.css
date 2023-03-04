@@ -3,11 +3,70 @@
    padding: 0;
 }
 :root{
-   --todo-list:#0B2027;
    --borda:rgba(246, 241, 209, 0.5);
+   --hover:rgba(246, 241, 209, 0.1);
    --texto:#F6F1D1;
-   --space-mono:font-family: "Space Mono", monospace;
-   --bioRhyme:font-family: "BioRhyme", serif;
+   --todo-list:#0B2027;
+   --bioRhyme: "BioRhyme", serif;
+   --space-mono: "Space Mono", monospace;
+}
+.app {
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   
+   width: 100vw;
+   min-height: 100vh;
+}
+.todo__list{
+   background-color: var(--todo-list) ;
+   font-family: var(--space-mono);
+   min-height: 18.75rem;
+   min-width:25rem;
+   padding: 1rem;
+}
+.todo__list-titulo{
+   border-bottom: 1px solid var(--borda);
+   color: var(--texto);
+   font-family: var(--bioRhyme);
+   font-size: 1.5rem;
+   margin-bottom: 1rem;
+}
+.formulario{
+   display: flex;
+   justify-content: center;
+}
+.formulario__input, .formulario__botao{
+   background-color: var(--texto);
+   font-size: 1rem ;
+   padding: 0.75rem;  
+}
+.formulario__input{
+   border-color: var(--borda);
+   outline: none;
+}
+.formulario__botao{
+   border: 1px;
+   cursor: pointer;
+   margin-left: 0.25rem ;
+   text-transform: uppercase;
+}
+.formulario__botao:hover{
+   background-color: var(--hover);
+   color: var(--texto);
 }
 
-
+.list {
+   padding: 0;
+   list-style: none;
+   width: 100%;
+ }
+ 
+ .task {
+   background-color: rgba(255, 255, 255, 0.1);
+   color: #F6F1D1;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 0.5rem;
+   padding: 1rem 3rem;
+ }
