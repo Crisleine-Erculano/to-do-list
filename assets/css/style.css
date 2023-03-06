@@ -4,8 +4,11 @@
 }
 :root{
    --borda:rgba(246, 241, 209, 0.5);
+   --box-shadow:rgba(0, 0, 0, 0.1);
    --hover:rgba(246, 241, 209, 0.1);
    --texto:#F6F1D1;
+   --tarefa:rgba(255, 255, 255, 0.1);
+   --tarefaConcluida:#46494C;
    --todo-list:#0B2027;
    --bioRhyme: "BioRhyme", serif;
    --space-mono: "Space Mono", monospace;
@@ -57,34 +60,45 @@
 }
 
 .lista {
-   padding: 0;
    list-style: none;
+   padding: 0;
    width: 100%;
  }
  
  .tarefa {
-   background-color: rgba(255, 255, 255, 0.1);
-   color: #F6F1D1;
+   background-color: var(--tarefa) ;
+   color: var(--texto);
    display: flex;
    justify-content: space-between;
    margin-bottom: 0.5rem;
+   margin-top: 0.5rem;
    padding: 1rem 3rem;
+   height: 50px;
+   
+   
  }
  .botao-conclui, .botao-delete {
-   background-color: #F6F1D1;
+   background-color: var(--texto);
    border: none;
-   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-   outline: none;
    border-radius: 2px;
+   box-shadow: 0 0 8px var(--box-shadow);
    cursor: pointer;
+   outline: none;
+   height: 50px;
+   width: 75px;
  }
- .tarefa.done .botao-conclui {
-   background-color: #46494C;
-   color: #F6F1D1;
+ .done .botao-conclui {
+   background-color:var(--tarefaConcluida) ;
+   color: var(--texto);
+   
  }
+ 
  .content {
    margin: 0;
+
+  
  }
- .tarefa.done .content {
+ .done .content {
    text-decoration: line-through;
+   
  }
