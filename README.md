@@ -14,9 +14,12 @@ Segui passo a passo do que foi ensinado no curso, e o resultado saiu conforme o 
    -HTML (Linguagem de Marcação de Hipertexto)
    -Javascript (Linguagem de Programação)
    -CSS (Folhas de Estilo em Cascata)
+
+   ## Deploy
+   -[GitHub Pages](https://crisleine-erculano.github.io/to-do-list/)
    
    ## Contato
-   [Linkedin](https://www.linkedin.com/in/crisleine-erculano/)
+   -[Linkedin](https://www.linkedin.com/in/crisleine-erculano/)
 
    ## Licença
 
