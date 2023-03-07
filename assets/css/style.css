@@ -5,6 +5,7 @@
 :root{
    --borda:rgba(246, 241, 209, 0.5);
    --box-shadow:rgba(0, 0, 0, 0.1);
+   --corpo:#5F698C;
    --hover:rgba(246, 241, 209, 0.1);
    --texto:#F6F1D1;
    --tarefa:rgba(255, 255, 255, 0.1);
@@ -12,6 +13,9 @@
    --todo-list:#0B2027;
    --bioRhyme: "BioRhyme", serif;
    --space-mono: "Space Mono", monospace;
+}
+body{
+   background-color:var(--corpo) ;
 }
 .app {
    align-items: center;
@@ -87,7 +91,7 @@
    height: 50px;
    width: 75px;
  }
- .done .botao-conclui {
+ .tarefa-feita .botao-conclui {
    background-color:var(--tarefaConcluida) ;
    color: var(--texto);
    
@@ -98,7 +102,7 @@
 
   
  }
- .done .content {
+ .tarefa-feita .content {
    text-decoration: line-through;
    
  }

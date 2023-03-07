@@ -33,7 +33,7 @@ const concluirTarefa = (evento) =>{
   const botaoConcluir = evento.target;
 
   const tarefaConcluida = botaoConcluir.parentElement;
-  tarefaConcluida.classList.toggle('done');
+  tarefaConcluida.classList.toggle('tarefa-feita');
   
 
 }
